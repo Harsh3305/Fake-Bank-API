@@ -13,7 +13,7 @@ This is a fake bank api created using Spring framework
 /api/banks
 ```
 ```
-/api/bank/{$accountNumber}
+/api/bank/{accountNumber}
 ```
 
 ###### This project is created with ❤️ by **Harsh**
