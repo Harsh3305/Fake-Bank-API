@@ -23,4 +23,16 @@ class BankController (private val service: BankService ){
         return ResponseEntity(e.message, HttpStatus.NOT_FOUND)
     }
 
+    @ExceptionHandler(IllegalArgumentException :: class)
+    fun handleNotFound(e: IllegalArgumentException) : ResponseEntity<String>{
+        return ResponseEntity(e.message, HttpStatus.BAD_REQUEST)
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping
+    fun addBank(@RequestBody bank : Bank) : Bank{
+        var createdBank : Bank = service.addBank(bank)
+        return createdBank
+    }
+
 }
