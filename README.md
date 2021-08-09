@@ -3,7 +3,10 @@ This is a fake bank api created using Spring framework
 
 [API](https://fakebankapi.azurewebsites.net/)
 
-### end-points
+-----
+## end-points
+#### GET end-points
+
 
 ```
 /
@@ -13,13 +16,21 @@ This is a fake bank api created using Spring framework
 /api/banks
 ```
 ```
-/api/bank/{accountNumber}
+/api/banks/{accountNumber}
+```
+-----
+#### POST end-points 
+#### Add bank in database
+
+```
+/api/banks/
 ```
 
+-----
 ###### This project is created with ❤️ by **Harsh**
 - [Github](https://github.com/Harsh3305)
 - [LinkedIn](https://www.linkedin.com/in/harsh-verma-45423819b/)
-
+-----
 ## Getting Started
 
 ### Reference Documentation
